@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2025-09-12T18:58:52.209Z",
+    "productName": "Milkshake",
+    "type": "deduction",
+    "quantity": "2",
+    "previousQuantity": "2482"
+  },
+  {
+    "date": "2025-09-12T19:15:11.273Z",
+    "productName": "Reboost",
+    "type": "deduction",
+    "quantity": "2",
+    "previousQuantity": "2982"
+  },
+  {
+    "date": "2025-09-12T21:17:58.543Z",
+    "productName": "Fat Cakes",
+    "type": "deduction",
+    "quantity": "10",
+    "previousQuantity": "69010"
+  }
+]

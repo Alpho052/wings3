@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2025-09-12T18:58:52.208Z",
+    "productName": "Milkshake",
+    "quantity": "2",
+    "price": 25.99,
+    "revenue": 51.98
+  },
+  {
+    "date": "2025-09-12T19:15:11.272Z",
+    "productName": "Reboost",
+    "quantity": "2",
+    "price": 9.99,
+    "revenue": 19.98
+  },
+  {
+    "date": "2025-09-12T21:17:58.528Z",
+    "productName": "Fat Cakes",
+    "quantity": "10",
+    "price": 1.99,
+    "revenue": 19.9
+  }
+]
