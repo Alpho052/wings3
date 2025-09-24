@@ -13,7 +13,7 @@ function Dashboard() {
   }, []);
 
   const fetchOverview = () => {
-    axios.get('http://localhost:5000/overview')
+    axios.get(`${process.env.REACT_APP_API_URL}/overview`)
       .then(res => {
         console.log('Overview fetched:', res.data);
         setOverview(res.data);
@@ -25,7 +25,7 @@ function Dashboard() {
   };
 
   const fetchSales = () => {
-    axios.get('http://localhost:5000/sales')
+    axios.get(`${process.env.REACT_APP_API_URL}/sales`)
       .then(res => {
         console.log('Sales fetched:', res.data);
         setSales(res.data);

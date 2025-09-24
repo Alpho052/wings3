@@ -13,7 +13,7 @@ function Products() {
   }, []);
 
   const fetchProducts = () => {
-    axios.get('http://localhost:5000/products')
+    axios.get(`${process.env.REACT_APP_API_URL}/products`)
       .then(res => {
         console.log('Products fetched:', res.data); // Debug log
         setProducts(res.data);
@@ -52,12 +52,12 @@ function Products() {
   const handleSubmit = () => {
     const formattedForm = { ...form, price: Number(form.price.toFixed(2)) }; // Ensure price is formatted before submission
     if (editingId) {
-      axios.put(`http://localhost:5000/products/${editingId}`, formattedForm)
+      axios.put(`${process.env.REACT_APP_API_URL}/products/${editingId}`, formattedForm)
         .then(fetchProducts)
         .catch(err => setError('Failed to update product.'));
       setEditingId(null);
     } else {
-      axios.post('http://localhost:5000/products', formattedForm)
+      axios.post(`${process.env.REACT_APP_API_URL}/products`, formattedForm)
         .then(fetchProducts)
         .catch(err => setError('Failed to add product.'));
     }
@@ -71,7 +71,7 @@ function Products() {
   };
 
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:5000/products/${id}`)
+    axios.delete(`${process.env.REACT_APP_API_URL}/products/${id}`)
       .then(fetchProducts)
       .catch(err => setError('Failed to delete product.'));
   };
