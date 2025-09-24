@@ -4,7 +4,7 @@
     "description": "Snack",
     "category": "lunch",
     "price": 1.99,
-    "quantity": 690,
+    "quantity": 600,
     "imageUrl": "https://th.bing.com/th/id/OIP.EhUvNNqh5s9U9EKmyk0UvAHaEt?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
     "id": "1757704158919"
   },
@@ -31,8 +31,26 @@
     "description": "Snack",
     "category": "Snacking Meal",
     "price": 4.99,
-    "quantity": 4,
+    "quantity": 1,
     "imageUrl": "https://th.bing.com/th/id/R.fd3ce730db0cf696baa8275cc9b0d98a?rik=LmY%2b2K1OD8X7zA&pid=ImgRaw&r=0",
     "id": "1757712493811"
+  },
+  {
+    "name": "Apples",
+    "description": "Snack",
+    "category": "Fruit",
+    "price": 5,
+    "quantity": 199,
+    "imageUrl": "https://tse3.mm.bing.net/th/id/OIP.edGXP6Pw6puE3jnvlpHAwwHaEc?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "id": "1758191388424"
+  },
+  {
+    "name": "GoSlos",
+    "description": "Snack",
+    "category": "Snacking Meal",
+    "price": 5,
+    "quantity": 300,
+    "imageUrl": "https://tse4.mm.bing.net/th/id/OIP.5f-CrAEe1vcBhmkA7EMABQHaI1?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "id": "1758268690149"
   }
 ]

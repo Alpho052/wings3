@@ -19,5 +19,19 @@
     "type": "deduction",
     "quantity": "10",
     "previousQuantity": "69010"
+  },
+  {
+    "date": "2025-09-18T10:30:10.550Z",
+    "productName": "Apples",
+    "type": "deduction",
+    "quantity": 1,
+    "previousQuantity": 200
+  },
+  {
+    "date": "2025-09-19T09:16:38.176Z",
+    "productName": "Fat Cakes",
+    "type": "deduction",
+    "quantity": "90",
+    "previousQuantity": "60090"
   }
 ]
