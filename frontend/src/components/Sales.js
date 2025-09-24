@@ -12,7 +12,7 @@ function Sales() {
   }, []);
 
   const fetchProducts = () => {
-    axios.get('http://localhost:5000/products')
+    axios.get((`${process.env.REACT_APP_API_URL}/products`)
       .then(res => {
         console.log('Products fetched:', res.data);
         setProducts(res.data.filter(product => product.quantity > 0));
@@ -29,7 +29,7 @@ function Sales() {
   };
 
   const handleSell = () => {
-    axios.post('http://localhost:5000/sales', saleForm)
+    axios.post(`${process.env.REACT_APP_API_URL}/sales`, saleForm)
       .then(() => {
         setSaleForm({ productName: '', quantity: 1 });
         fetchProducts();
