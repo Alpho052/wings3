@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FormControl, InputLabel, Select, MenuItem, TextField, Button, Box, Typography } from '@mui/material';
@@ -12,7 +13,7 @@ function Sales() {
   }, []);
 
   const fetchProducts = () => {
-    axios.get((`${process.env.REACT_APP_API_URL}/products`)
+    axios.get(`${process.env.REACT_APP_API_URL}/products`) // Removed extra parenthesis
       .then(res => {
         console.log('Products fetched:', res.data);
         setProducts(res.data.filter(product => product.quantity > 0));
