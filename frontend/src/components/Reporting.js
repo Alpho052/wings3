@@ -11,7 +11,7 @@ function Reporting() {
   useEffect(() => {
     setLoading(true);
     console.log('Attempting to fetch reporting data...'); // Start of fetch log
-    axios.get('http://localhost:5000/reporting')
+    axios.get(`${process.env.REACT_APP_API_URL}/reporting`)
       .then(res => {
         console.log('Raw API response:', res.data); // Log raw response
         const data = res.data || {};
