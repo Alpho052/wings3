@@ -13,7 +13,7 @@ function Inventory() {
   }, []);
 
   const fetchInventory = () => {
-    axios.get('http://localhost:5000/inventory')
+    axios.get(`${process.env.REACT_APP_API_URL}/inventory`)
       .then(res => {
         console.log('Inventory fetched:', res.data); // Debug log
         setInventory(res.data);
@@ -25,7 +25,7 @@ function Inventory() {
   };
 
   const fetchProducts = () => {
-    axios.get('http://localhost:5000/products')
+    axios.get(`${process.env.REACT_APP_API_URL}/products`)
       .then(res => {
         console.log('Products fetched:', res.data); // Debug log
         setProducts(res.data);
